@@ -29,6 +29,24 @@ const getData = () => [
 const randomise = () => {
     const cardRandom = getData();
     cardRandom.sort(() => Math.random() - 0.5);
-    console.log(cardRandom);
+    return cardRandom;
 };
-randomise();
+
+//generate the card htmls
+const generateCards = () => {
+    const cardRandom = randomise();
+    console.log(cardRandom);
+    cardRandom.forEach((item) => {
+        const card = document.createElement('div');
+        const front = document.createElement('img');
+        const back = document.createElement('div'); 
+        card.classList = "card";
+        front.classList = "front";
+        back.classList = "back";
+        section.appendChild(card);
+        card.appendChild(front);
+        card.appendChild(back);
+})
+
+};
+generateCards();
