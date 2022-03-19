@@ -23,4 +23,12 @@ const getData = () => [
     {imgSrc: "images/mulan.jpg", name:'mulan'},
     {imgSrc: "images/pocahontas.jpg", name:'pocahontas'},
     {imgSrc: "images/snowwhite.jpg", name:'snowwhite'},
-]
+];
+
+//randomise the selection of images
+const randomise = () => {
+    const cardRandom = getData();
+    cardRandom.sort(() => Math.random() - 0.5);
+    console.log(cardRandom);
+};
+randomise();
