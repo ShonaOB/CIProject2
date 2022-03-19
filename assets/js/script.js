@@ -12,7 +12,7 @@ const getData = () => [
     {imgSrc: "assets/images/belle.jpg", name:'belle'},
     {imgSrc: "assets/images/jasmine.jpg", name:'jasmine'},
     {imgSrc: "assets/images/merida.jpg", name:'merida'},
-    {imgSrc: "assets/images/mulan.jpg", name:'mulan'},
+    {imgSrc: "assets/images/mulan.jpeg", name:'mulan'},
     {imgSrc: "assets/images/pocahontas.jpg", name:'pocahontas'},
     {imgSrc: "assets/images/snowwhite.jpg", name:'snowwhite'},
     {imgSrc: "assets/images/ariel.jpg", name:'ariel'},
@@ -20,7 +20,7 @@ const getData = () => [
     {imgSrc: "assets/images/belle.jpg", name:'belle'},
     {imgSrc: "assets/images/jasmine.jpg", name:'jasmine'},
     {imgSrc: "assets/images/merida.jpg", name:'merida'},
-    {imgSrc: "assets/images/mulan.jpg", name:'mulan'},
+    {imgSrc: "assets/images/mulan.jpeg", name:'mulan'},
     {imgSrc: "assets/images/pocahontas.jpg", name:'pocahontas'},
     {imgSrc: "assets/images/snowwhite.jpg", name:'snowwhite'},
 ];
