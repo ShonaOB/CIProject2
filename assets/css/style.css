@@ -8,5 +8,6 @@ body {
     background: pink;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    
+    display: grid;
+
 }

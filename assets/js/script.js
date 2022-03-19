@@ -7,22 +7,22 @@ scoreCount.textContent = lives;
 
 //gathering the data together
 const getData = () => [
-    {imgSrc: "images/ariel.jpg", name:'ariel'},
-    {imgSrc: "images/aurora.jpg", name:'aurora'},
-    {imgSrc: "images/belle.jpg", name:'belle'},
-    {imgSrc: "images/jasmine.jpg", name:'jasmine'},
-    {imgSrc: "images/merida.jpg", name:'merida'},
-    {imgSrc: "images/mulan.jpg", name:'mulan'},
-    {imgSrc: "images/pocahontas.jpg", name:'pocahontas'},
-    {imgSrc: "images/snowwhite.jpg", name:'snowwhite'},
-    {imgSrc: "images/ariel.jpg", name:'ariel'},
-    {imgSrc: "images/aurora.jpg", name:'aurora'},
-    {imgSrc: "images/belle.jpg", name:'belle'},
-    {imgSrc: "images/jasmine.jpg", name:'jasmine'},
-    {imgSrc: "images/merida.jpg", name:'merida'},
-    {imgSrc: "images/mulan.jpg", name:'mulan'},
-    {imgSrc: "images/pocahontas.jpg", name:'pocahontas'},
-    {imgSrc: "images/snowwhite.jpg", name:'snowwhite'},
+    {imgSrc: "assets/images/ariel.jpg", name:'ariel'},
+    {imgSrc: "assets/images/aurora.jpg", name:'aurora'},
+    {imgSrc: "assets/images/belle.jpg", name:'belle'},
+    {imgSrc: "assets/images/jasmine.jpg", name:'jasmine'},
+    {imgSrc: "assets/images/merida.jpg", name:'merida'},
+    {imgSrc: "assets/images/mulan.jpg", name:'mulan'},
+    {imgSrc: "assets/images/pocahontas.jpg", name:'pocahontas'},
+    {imgSrc: "assets/images/snowwhite.jpg", name:'snowwhite'},
+    {imgSrc: "assets/images/ariel.jpg", name:'ariel'},
+    {imgSrc: "assets/images/aurora.jpg", name:'aurora'},
+    {imgSrc: "assets/images/belle.jpg", name:'belle'},
+    {imgSrc: "assets/images/jasmine.jpg", name:'jasmine'},
+    {imgSrc: "assets/images/merida.jpg", name:'merida'},
+    {imgSrc: "assets/images/mulan.jpg", name:'mulan'},
+    {imgSrc: "assets/images/pocahontas.jpg", name:'pocahontas'},
+    {imgSrc: "assets/images/snowwhite.jpg", name:'snowwhite'},
 ];
 
 //randomise the selection of images
@@ -36,13 +36,17 @@ const randomise = () => {
 const generateCards = () => {
     const cardRandom = randomise();
     console.log(cardRandom);
+    //create the HTML for the cards
     cardRandom.forEach((item) => {
         const card = document.createElement('div');
         const front = document.createElement('img');
         const back = document.createElement('div'); 
         card.classList = "card";
         front.classList = "front";
+        //attach images to the card front
+        front.src = item.imgSrc;
         back.classList = "back";
+        //attaching the cards to the section
         section.appendChild(card);
         card.appendChild(front);
         card.appendChild(back);
