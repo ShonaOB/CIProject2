@@ -8,7 +8,7 @@ section {
     grid-template-columns: repeat(4, 8rem);
     grid-template-rows: repeat(4, 8rem);
     gap: 2rem;
-    perspective: 750px;
+    perspective: 800px;
 }
 body {
     background: pink;
@@ -46,7 +46,8 @@ button:hover {
 .card {
     position: relative;
     transform-style: preserve-3d;
-    transform: rotateY(110deg);
+    transition: all 2.5s ease;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
 }
 .front, .back {
     width: 100%;
@@ -55,6 +56,9 @@ button:hover {
 }
 
 .back {
-    background-color: magenta;
+    background-color: rgb(243, 38, 177);
     backface-visibility: hidden;
+}
+.toggleCard {
+    transform: rotateY(180deg);
 }
