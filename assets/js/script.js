@@ -64,7 +64,38 @@ const generateCards = () => {
 const check = (e) => {
     const clickedCard = e.target;
     console.log(clickedCard);
+    clickedCard.classList.add('flipped');
+    const flippedCards = document.querySelectorAll('.flipped');
+    //logic
+    if (flippedCards.length === 2) {
+        if (flippedCards[0].getAttribute("name") === flippedCards[1].getAttribute("name")) {
+            console.log('match');
+            flippedCards.forEach ((card) => {
+                card.classList.remove("flipped");
+                card.style.pointerEvents = "none";
+            })
+        } else {
+            console.log('incorrect');
+            flippedCards.forEach((card) => {
+                card.classList.remove("flipped");
+                setTimeout(() => card.classList.remove("toggleCard"), 2000);
+            });
+            lives--;
+            scoreCount.textContent = lives;
+            if(lives === 0) {
+                alert('Oh no! You lost all of your points. Try again!');
+                restart()
+            }
+        }
+    } 
+};
+
+const restart = () => {
+    let getData = randomise();
+    let fronts = document.querySelectorAll(".front");
+    let cards = document.querySelectorAll(".card");
+    getData.forEach ((item, index) => {
+        cards[index].classList.remove('toggleCard');
+    })
 }
-
 generateCards();
-
