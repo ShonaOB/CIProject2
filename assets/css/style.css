@@ -18,6 +18,27 @@ body {
     align-items: center;
     flex-direction: column;
 }
+button {
+    font-weight: bolder;
+    font-size:large;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+    color: purple;
+    background-color: lightcyan;
+    border-style: none;
+    border-radius: 20%;
+    box-shadow: -10px 10px 20px purple;
+}
+button:hover {
+    background-color: lightgreen;
+    transition: 0.7s;
+}
+
+.start {
+    height: 100px;
+    width: 200px;
+    margin: 50px;
+}
 
 .front, .back {
     width: 100%;
