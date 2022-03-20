@@ -37,7 +37,7 @@ const generateCards = () => {
     const cardRandom = randomise();
     console.log(cardRandom);
     //create the HTML for the cards
-    cardRandom.forEach((item) => {
+    cardRandom.forEach((item, index) => {
         const card = document.createElement('div');
         const front = document.createElement('img');
         const back = document.createElement('div'); 
@@ -45,17 +45,26 @@ const generateCards = () => {
         front.classList = "front";
         //attach images to the card front
         front.src = item.imgSrc;
+        card.setAttribute('name', item.name);
         back.classList = "back";
         //attaching the cards to the section
         section.appendChild(card);
         card.appendChild(front);
         card.appendChild(back);
-
+        // card toggle event listener is added here
         card.addEventListener('click', (e) => {
             card.classList.toggle('toggleCard');
+            check(e);
         })
     })
 
 };
+//checking the cards against each other
+
+const check = (e) => {
+    const clickedCard = e.target;
+    console.log(clickedCard);
+}
+
 generateCards();
 
