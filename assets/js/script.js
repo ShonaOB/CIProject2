@@ -82,8 +82,8 @@ const check = (e) => {
             lives--;
             scoreCount.textContent = lives;
             if(lives === 0) {
-                alert('Oh no! You lost all of your points. Try again!');
-                restart();
+                setTimeout(() => alert('Oh no! You lost all of your points. Try again!'), 1500);
+                setTimeout(() => restart(), 1500);
             }
         }
     }
