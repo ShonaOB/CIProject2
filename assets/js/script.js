@@ -72,7 +72,6 @@ const check = (e) => {
             console.log('match');
             flippedCards.forEach ((card) => {
                 card.classList.remove("flipped");
-                card.style.pointerEvents = "none";
             })
         } else {
             console.log('incorrect');
@@ -84,7 +83,7 @@ const check = (e) => {
             scoreCount.textContent = lives;
             if(lives === 0) {
                 alert('Oh no! You lost all of your points. Try again!');
-                restart()
+                restart();
             }
         }
     } 
@@ -96,6 +95,10 @@ const restart = () => {
     let cards = document.querySelectorAll(".card");
     getData.forEach ((item, index) => {
         cards[index].classList.remove('toggleCard');
+        setTimeout(() => (fronts[index].src = item.imgSrc), 1000);
+        cards[index].setAttribute('name', item.name );
     })
-}
+    lives = 8
+    scoreCount.textContent = lives, 1000;
+};
 generateCards();
