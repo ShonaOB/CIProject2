@@ -82,7 +82,7 @@ const check = (e) => {
             lives--;
             scoreCount.textContent = lives;
             if(lives === 0) {
-                setTimeout(() => alert(`Oh no! You have run out of lives. Don't worry, you can Try again!`), 1500);
+                setTimeout(() => alert(`Oh no! You have run out of lives. Don't worry, you can try again!`), 1500);
                 setTimeout(() => restart(), 1500);
             }
         }
