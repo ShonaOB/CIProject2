@@ -1,7 +1,7 @@
 //setting up the constants
 const section = document.querySelector('section');
 const scoreCount = document.querySelector('span');
-let lives = 8;
+let lives = 10;
 scoreCount.textContent = lives;
 
 
@@ -77,7 +77,7 @@ const check = (e) => {
             console.log('incorrect');
             flippedCards.forEach((card) => {
                 card.classList.remove("flipped");
-                setTimeout(() => card.classList.remove("toggleCard"), 2000);
+                setTimeout(() => card.classList.remove("toggleCard"), 1500);
             });
             lives--;
             scoreCount.textContent = lives;
@@ -86,6 +86,11 @@ const check = (e) => {
                 restart();
             }
         }
+    }
+    let toggleCard = document.getElementsByClassName('toggleCard');
+    if (toggleCard.length === 16) {
+        setTimeout(() => alert('Well Done! You won the game!'), 1500);
+        setTimeout(() => restart(), 2000);
     } 
 };
 
@@ -98,7 +103,7 @@ const restart = () => {
         setTimeout(() => (fronts[index].src = item.imgSrc), 1000);
         cards[index].setAttribute('name', item.name );
     })
-    lives = 8
+    lives = 10;
     scoreCount.textContent = lives, 1000;
 };
 generateCards();
