@@ -27,6 +27,7 @@ h1 {
     padding: 2%;
     margin: 10px;
     font-size: 350%;
+    text-align: center;
 }
 
 .instructions {
@@ -97,4 +98,18 @@ button {
 }
 .toggleCard {
     transform: rotateY(180deg);
+}
+
+/* media queries */
+@media only screen and (max-width: 425px) {
+    h1 {
+        font-size: smaller;
+    }
+    section {
+        display: grid;
+        grid-template-columns: repeat(4, 4rem);
+        grid-template-rows: repeat(4, 3rem);
+        gap: 2rem;
+        padding-top: 2rem;
+    }
 }
