@@ -31,6 +31,10 @@ h1 {
     color: rgba(48, 14, 197, 0.418);
     text-align: center;
 }
+.header {
+    background-color: rgba(226, 221, 221, 0.452);
+    width: 100%;
+}
 
 .instructions {
     text-align: center;
