@@ -21,12 +21,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 h1 {
     padding: 2%;
     margin: 10px;
-    font-size: 350%;
+    font-size: 3rem;
+    color: rgba(48, 14, 197, 0.418);
     text-align: center;
 }
 
@@ -35,12 +37,19 @@ h1 {
     text-decoration: underline;
     padding: 2%;
     margin: 10px;
-    font-size: 200%;
+    font-size: 2rem;
 }
 
 li {
     text-decoration: none;
     font-size: 200%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+ul {
+    width: 65%;
+    text-align: center;
+    list-style-type:none;
 }
 
 .ready-to-start {
@@ -102,14 +111,12 @@ button {
 
 /* media queries */
 @media only screen and (max-width: 425px) {
-    h1 {
-        font-size: smaller;
-    }
+
     section {
         display: grid;
         grid-template-columns: repeat(4, 4rem);
         grid-template-rows: repeat(4, 3rem);
-        gap: 2rem;
+        gap: 1rem;
         padding-top: 2rem;
     }
 }

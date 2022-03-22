@@ -82,16 +82,18 @@ const check = (e) => {
             lives--;
             scoreCount.textContent = lives;
             if(lives === 0) {
-                setTimeout(() => alert(`Oh no! You have run out of lives. Don't worry, you can try again!`), 1500);
+                setTimeout(() => Swal.fire( {
+                    icon: 'error', title: 'Oops...',text: 'You have run out of lives! Try again!',
+                    }), 1500);
                 setTimeout(() => restart(), 1500);
-            }
-        }
-    }
+            };
+        };
+    };
     let toggleCard = document.getElementsByClassName('toggleCard');
     if (toggleCard.length === 16) {
-        setTimeout(() => alert('Well Done! You won the game!'), 1500);
+        setTimeout(() => Swal.fire('Good job!','You won!','success'), 1500);
         setTimeout(() => restart(), 2000);
-    } 
+    }; 
 };
 
 const restart = () => {
