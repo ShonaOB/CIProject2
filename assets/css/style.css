@@ -3,14 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-section {
-    display: grid;
-    grid-template-columns: repeat(4, 8rem);
-    grid-template-rows: repeat(4, 8rem);
-    gap: 2rem;
-    perspective: 800px;
-    padding-top: 2rem;
-}
+
 body {
     background-image: linear-gradient(#45ec95, #8df09d, #b9f3ad, #daf6c3, #f2fbde);
     background-repeat: no-repeat;
@@ -31,13 +24,16 @@ h1 {
     color: rgba(48, 14, 197, 0.418);
     text-align: center;
 }
+
 .header {
     background-color: rgba(226, 221, 221, 0.452);
     width: 100%;
 }
+
 .header-game-page {
     font-size:150%;
 }
+
 .instructions {
     text-align: center;
     text-decoration: underline;
@@ -52,6 +48,7 @@ li {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+
 ul {
     width: 65%;
     text-align: center;
@@ -77,6 +74,7 @@ button {
     border-radius: 50%;
     box-shadow: -10px 10px 20px purple;
 }
+
 .start:hover {
     background-color: salmon;
     color:whitesmoke;
@@ -101,6 +99,7 @@ button {
     transition: all 2.5s ease;
     box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
 }
+
 .front, .back {
     width: 100%;
     height: 100%;
@@ -112,14 +111,24 @@ button {
     background-color: whitesmoke;
     backface-visibility: hidden;
 }
+
 .toggleCard {
     transform: rotateY(180deg);
+}
+
+#cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 8rem);
+    grid-template-rows: repeat(4, 8rem);
+    gap: 2rem;
+    perspective: 800px;
+    padding-top: 2rem;
 }
 
 /* media queries */
 @media only screen and (max-width: 425px) {
 
-    section {
+    #cards-container {
         display: grid;
         grid-template-columns: repeat(4, 4rem);
         grid-template-rows: repeat(4, 3rem);
