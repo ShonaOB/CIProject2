@@ -12,7 +12,7 @@ section {
     padding-top: 2rem;
 }
 body {
-    background-image: linear-gradient( 69.7deg,  rgba(244,37,243,0.5) 1.4%, rgba(244,87,1,0.5) 36.2%, rgba(255,204,37,0.5) 72.2%, rgba(20,196,6,0.5) 113% );;
+    background-image: linear-gradient(#45ec95, #8df09d, #b9f3ad, #daf6c3, #f2fbde);
     background-repeat: no-repeat;
     font-family: 'Garamond', 'Times New Roman', Times, serif;
     color: steelblue;

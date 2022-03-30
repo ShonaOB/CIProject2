@@ -1,108 +1,164 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">Princess Memory Card Game</h1>
 
-Welcome ShonaOB,
+[View the live project here.](https://shonaob.github.io/CIProject2/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This game is aimed at children between the ages of 5 to 10 years old. The aim of the game is to uncover all the matching pairs of cards before you run out of "lives". It is a fun, slow paced game to help develop memory and dexterity skills!
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<h2 align="center"><img src="assets/images/mainheader.JPG"></h2>
 
-## Gitpod Reminders
+## User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+-   ### User stories
 
-`python3 -m http.server`
+    -   #### First Time Visitor Goals
 
-A blue button should appear to click: _Make Public_,
+        1. As a First Time Visitor, I want the instructions to be easily understandable and easy to follow within the target age group
+        2. As a First Time Visitor, I want the access to the main game to be intuitive and easy.
+        3. As a First Time Visitor, I am not looking for any further information - with as little distraction as possible.
 
-Another blue button should appear to click: _Open Browser_.
+    -   #### Returning Visitor Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+        1. As a Returning Visitor, I want consistency in how the site is displayed. 
+        2. As a Returning Visitor, I may require the buttons and the styling to remain similar, should I have any literacy issues or sensory issues. 
 
-A blue button should appear to click: _Make Public_,
+    -   #### Frequent User Goals
+        1. As a Frequent User, I want to check to see if there are any newly added levels in the game - this will be included in future versions of the game. 
+        2. As a Frequent User, I want to see more rewards or a point system for frequent winning in the game - this will be included in future versions of the game. 
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+-   ### Design
+    -   #### Colour Scheme
+        -   The background on the site was initially a colourful gradient, however after testing with users it was found to be too distracting. A simple, single colour background was implemented instead.
+    -   #### Typography
+        -   The Garamond font family was first choice for this site for readability and also as the serif style suited the theme. Times New Roman is a backup.
+    -   #### Imagery
+        -   Imagery is limited to the cards themselves to avoid distractions. The images used are from various sources and intended only for use in this game (as a project).
 
-To log into the Heroku toolbelt CLI:
+*   ### Wireframes
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    -   PC Wireframe - [Image](/workspace/CIProject2/assets/images/wireframepc.JPG)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    -   Mobile Wireframe - [Image](/workspace/CIProject2/assets/images/wireframemobile.JPG)
 
-------
 
-## Release History
+## Features
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+-   Responsive on all device sizes
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+-   Interactive elements
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Technologies Used
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Languages Used
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Frameworks, Libraries & Programs Used
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+1. [Git](https://github.com/ShonaOB/CIProject2)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/ShonaOB/CIProject2)
+    - GitHub is used to store the projects code after being pushed from Git.
+1. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the [wireframes](https://github.com/ShonaOB/CIProject2) during the design process.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Testing
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [JavaScript Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Testing User Stories from User Experience (UX) Section
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+-   #### First Time Visitor Goals
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    1. As a First Time Visitor, I want the instructions to be easily understandable and easy to follow within the target age group
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable list of instructions. 
+        2. The "Start" button is easily accessible for those within the age group, and the hover/colour change shows clearly when you are about to interact with it. 
 
-------
+    2. As a First Time Visitor, I want the access to the main game to be intuitive and easy.
 
-## FAQ about the uptime script
+        1. The game site is extremely simple with very little distraction. This allows the user to focus on the task at hand. 
+        2. The "Lives" counter is familiar to users in this age bracket and very clear and understandable. 
+        3. The only other button on the page is the button to return to the home screen. 
 
-**Why have you added this script?**
+    3. As a First Time Visitor, I am not looking for any further information - with as little distraction as possible
+        1. The minimal design of the site and the calm colour scheme provide very little distraction. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+-   #### Returning Visitor Goals
 
-**How will this affect me?**
+    1. As a Returning Visitor, I want consistency in how the site is displayed.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+        1. The simple design and colour scheme allows the site to remain consistent for users. 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+    2. As a Returning Visitor, I may require the buttons and the styling to remain similar, should I have any literacy issues or sensory issues. 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+        1. The site is very simple without distracting adverts or other links to external sources. 
+        2. The buttons are large and clear, with only two options (start and return home) to avoid confusion. 
+-   #### Frequent User Goals
 
-**So….?**
+    1. . As a Frequent User, I want to check to see if there are any newly added levels in the game - this will be included in future versions of the game. 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+        1. This will be included in future releases 
 
-**Can I opt out?**
+    2. As a Frequent User, I want to see more rewards or a point system for frequent winning in the game - this will be included in future versions of the game.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+        1. This will be included in future releases 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Further Testing
 
-**Anything more?**
+-   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, Samsung.
+-   A large amount of testing was done to ensure that all pages were linking correctly.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   Colleagues and friends on our Slack community were asked to test and report any issues. 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Known Bugs
 
----
+-   Some testers reported that the speed at which the cards rotate is too slow, however once reminded of the target audience, they agreed the speed was appropriate for the group. 
+-   Some testers recommended that all cards be shown initially, for a couple of seconds, before the game starts. However this was not in the brief for this project. 
 
-Happy coding!
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/ShonaOB/CIProject2)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+
+## Credits
+
+### Code
+
+-   Several online tutorials were helpful to me in creating this project: 
+    - [DevEd] - (https://www.youtube.com/watch?v=-tlb4tv4mC4): Wonderful and speedy tutorial on memory games, and this tutorial was specifically useful in creating the grid for the cards. Also extremely helpful and inspiring to learn how to make my code more concise. 
+    - [KodeBase] - (https://www.youtube.com/watch?v=43kJSL4sieE): hugely helpful in learning how to use the SweetAlert popup feature
+    - [Inspiration] - (https://www.youtube.com/watch?v=u7vuewwPjfE&t=77s): inspiring games for similar projects!
+
+-   [WC3 School Tutorials](https://www.w3schools.com/js/) : For all general queries, this was a wonderful resource. It was specifically helpful in implementing the gradients in the background and the time-out section of the code. 
+
+### Content
+
+-   All content was written by the developer.
+
+### Media
+
+-   All Images were located through Pinterest and remain the copyright of the original owners, as well as Disney.
+
+### Acknowledgements
+
+-   My Mentor for continuous helpful feedback.
+
+-   Slack Community for their support and guidance.
