@@ -76,6 +76,13 @@ button {
 }
 
 .start:hover {
+    cursor: pointer;
+    background-color: salmon;
+    color:whitesmoke;
+    transition: 0.7s;
+}
+.finish:hover {
+    cursor: pointer;
     background-color: salmon;
     color:whitesmoke;
     transition: 0.7s;

@@ -4,7 +4,7 @@
 
 This game is aimed at children between the ages of 5 to 10 years old. The aim of the game is to uncover all the matching pairs of cards before you run out of "lives". It is a fun, slow paced game to help develop memory and dexterity skills!
 
-<h2 align="center"><img src="assets/images/mainheader.JPG"></h2>
+<h2 align="center"><img src="docs/assets/images/mainheader.jpg"></h2>
 
 ## User Experience (UX)
 
@@ -36,9 +36,9 @@ This game is aimed at children between the ages of 5 to 10 years old. The aim of
 
 *   ### Wireframes
 
-    -   PC Wireframe - [Image](/workspace/CIProject2/assets/images/wireframepc.JPG)
+    -   PC Wireframe - [Image](docs/images/wireframepc.jpg)
 
-    -   Mobile Wireframe - [Image](/workspace/CIProject2/assets/images/wireframemobile.JPG)
+    -   Mobile Wireframe - [Image](docs/images/wireframemobile.jpg)
 
 *   ### Screenshots
 
@@ -47,8 +47,8 @@ This game is aimed at children between the ages of 5 to 10 years old. The aim of
     <img src="docs/images/pcgamepage.jpg" width="500" height="250">
 
     ### Mobile Screenshots 
-    <img src="/workspace/CIProject2/assets/images/mobilemainpage.JPG" width= 150px height= 250px>
-    <img src="/workspace/CIProject2/assets/images/mobilegamepage.JPG" width= 150px height= 250px>
+    <img src="docs/images/mobilemainpage.jpg" width= "150" height= "250">
+    <img src="docs/images/mobilegamepage.jpg" width= "150" height= "250">
 
 
 ## Features
@@ -80,7 +80,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - no errors found
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - no errors found
--   [JavaScript Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [JavaScript Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - One error identified: "Expected an assignment or function call and instead saw an expression.". There is no assignment required here.  
 
 
 ### Testing User Stories from User Experience (UX) Section
@@ -90,16 +90,22 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     1. As a First Time Visitor, I want the instructions to be easily understandable and easy to follow within the target age group
 
         1. Upon entering the site, users are automatically greeted with a clean and easily readable list of instructions. 
-        2. The "Start" button is easily accessible for those within the age group, and the hover/colour change shows clearly when you are about to interact with it. 
+        2. The "Start" button is easily accessible for those within the age group, and the hover/colour change shows clearly when you are about to interact with it.
+
+    <img src="docs/images/pcmainpage.jpg" width="500" height="250"> 
 
     2. As a First Time Visitor, I want the access to the main game to be intuitive and easy.
 
         1. The game site is extremely simple with very little distraction. This allows the user to focus on the task at hand. 
         2. The "Lives" counter is familiar to users in this age bracket and very clear and understandable. 
         3. The only other button on the page is the button to return to the home screen. 
+    
+    <img src="docs/images/pcgamepage.jpg" width="500" height="250">
 
     3. As a First Time Visitor, I am not looking for any further information - with as little distraction as possible
         1. The minimal design of the site and the calm colour scheme provide very little distraction. 
+    
+    <img src="docs/images/pcmainpage.jpg" width="500" height="250">
 
 -   #### Returning Visitor Goals
 
@@ -111,6 +117,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
         1. The site is very simple without distracting adverts or other links to external sources. 
         2. The buttons are large and clear, with only two options (start and return home) to avoid confusion. 
+    
+    <img src="docs/images/pcmainpage.jpg" width="500" height="250">
 -   #### Frequent User Goals
 
     1. . As a Frequent User, I want to check to see if there are any newly added levels in the game - this will be included in future versions of the game. 
@@ -127,12 +135,16 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   The website was viewed on a variety of devices such as Desktop, Laptop, Samsung.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
--   Colleagues and friends on our Slack community were asked to test and report any issues. 
+-   Reviewed with my Mentor before submission and errors were fixed as follows: 
+        - Meta tag description was added
+        - resolved an error in the button set up
+        - the "Cards-container" was initially a Section which was throwing an error in validation, so this was changed to a div after discussion with my Mentor
 
 ### Known Bugs
 
 -   Some testers reported that the speed at which the cards rotate is too slow, however once reminded of the target audience, they agreed the speed was appropriate for the group. 
 -   Some testers recommended that all cards be shown initially, for a couple of seconds, before the game starts. However this was not in the brief for this project. 
+-   Jshint error "Expected an assignment or function call and instead saw an expression." - there is no result to assign to a variable here so it was not updated. 
 
 ## Deployment
 
