@@ -1,5 +1,5 @@
 //setting up the constants
-const section = document.querySelector('section');
+const cardsContainer = document.getElementById('cards-container');
 const scoreCount = document.querySelector('span');
 let lives = 10;
 scoreCount.textContent = lives;
@@ -93,8 +93,8 @@ const generateCards = () => {
         front.src = item.imgSrc;
         card.setAttribute('name', item.name);
         back.classList = "back";
-        //attaching the cards to the section
-        section.appendChild(card);
+        //attaching the cards to the cards container
+        cardsContainer.appendChild(card);
         card.appendChild(front);
         card.appendChild(back);
         // card toggle event listener is added here
