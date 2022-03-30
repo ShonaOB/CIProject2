@@ -25,8 +25,8 @@ body {
 }
 
 h1 {
-    padding: 2%;
-    margin: 10px;
+    padding: 1%;
+    margin: 5px;
     font-size: 3rem;
     color: rgba(48, 14, 197, 0.418);
     text-align: center;
@@ -35,11 +35,13 @@ h1 {
     background-color: rgba(226, 221, 221, 0.452);
     width: 100%;
 }
-
+.header-game-page {
+    font-size:150%;
+}
 .instructions {
     text-align: center;
     text-decoration: underline;
-    padding: 2%;
+    padding: 0.25%;
     margin: 10px;
     font-size: 2rem;
 }
@@ -84,12 +86,13 @@ button {
 .start, .finish {
     height: 100px;
     width: 200px;
-    margin: 50px;
+    margin: 10px;
 }
 
 .score {
     font-size:xx-large;
     margin: 10px;
+    text-shadow: 1px 1px 10px #FFF433, 1px 1px 10px #FFF433;
 }
 
 .card {

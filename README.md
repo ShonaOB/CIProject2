@@ -40,6 +40,16 @@ This game is aimed at children between the ages of 5 to 10 years old. The aim of
 
     -   Mobile Wireframe - [Image](/workspace/CIProject2/assets/images/wireframemobile.JPG)
 
+*   ### Screenshots
+
+    ### PC Screenshots 
+    <img src="/workspace/CIProject2/assets/images/pcmainpage.JPG" width= 500px height= 250px>
+    <img src="/workspace/CIProject2/assets/images/pcgamepage.JPG"width= 500px height=250px>
+
+    ### Mobile Screenshots 
+    <img src="/workspace/CIProject2/assets/images/mobilemainpage.JPG" width= 150px height= 250px>
+    <img src="/workspace/CIProject2/assets/images/mobilegamepage.JPG" width= 150px height= 250px>
+
 
 ## Features
 
