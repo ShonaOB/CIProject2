@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 //setting up the constants
 const cardsContainer = document.getElementById('cards-container');
 const scoreCount = document.querySelector('span');
@@ -77,7 +78,7 @@ const randomise = () => {
     const cardRandom = getData();
     cardRandom.sort(() => Math.random() - 0.5);
     return cardRandom;
-}
+};
 
 //generate the card htmls
 const generateCards = () => {
@@ -103,7 +104,7 @@ const generateCards = () => {
             check(e);
         });
     });
-}
+};
 
 //checking the cards against each other
 const check = (e) => {
@@ -138,7 +139,7 @@ const check = (e) => {
         setTimeout(() => Swal.fire('Good job!', 'You won!', 'success'), 1500);
         setTimeout(() => restart(), 2000);
     }
-}
+};
 
 const restart = () => {
     let getData = randomise();
@@ -151,6 +152,6 @@ const restart = () => {
     });
     lives = 10;
     scoreCount.textContent = lives, 1000;
-}
+};
 
 generateCards();

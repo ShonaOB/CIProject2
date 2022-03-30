@@ -43,8 +43,8 @@ This game is aimed at children between the ages of 5 to 10 years old. The aim of
 *   ### Screenshots
 
     ### PC Screenshots 
-    <img src="/workspace/CIProject2/assets/images/pcmainpage.JPG" width= 500px height= 250px>
-    <img src="/workspace/CIProject2/assets/images/pcgamepage.JPG"width= 500px height=250px>
+    <img src="docs/images/pcmainpage.jpg" width="500" height="250">
+    <img src="docs/images/pcgamepage.jpg" width="500" height="250">
 
     ### Mobile Screenshots 
     <img src="/workspace/CIProject2/assets/images/mobilemainpage.JPG" width= 150px height= 250px>
@@ -78,8 +78,8 @@ This game is aimed at children between the ages of 5 to 10 years old. The aim of
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - no errors found
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - no errors found
 -   [JavaScript Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 
 
